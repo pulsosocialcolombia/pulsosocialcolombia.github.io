@@ -82,7 +82,7 @@
 
     <!-- Twitter Cards -->
     <meta name="twitter:title" content="Banco de Imagénes">
-    <meta name="twitter:description" content="This is a photo gallery made from the static files in the `assets/img/pexels` folder.I wanted to create automatically a simple gallery from a folder without ...">
+    <meta name="twitter:description" content="Como resultado del proyecto se generaron un gran número de gráficos para cada uno de las variables utilizadas ( [ver Diccionario de datos]({% post_url 2021-1...">
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="http://localhost:4000/assets/img/backs/prueba2.png">
@@ -147,8 +147,8 @@
             
             <li class="separator"> | </li>
             <li>
-                <a class="clear" aria-label="Principales Resultados" title="Principales Resultados" href="/resultados/">
-                     Principales Resultados 
+                <a class="clear" aria-label="Dashboard" title="Dashboard" href="/dash/">
+                     Dashboard 
                 </a>
             </li>
             
@@ -182,12 +182,6 @@
             
             
         
-            
-            
-        
-            
-            
-        
         
         
         <li class="separator"> | </li>
@@ -214,361 +208,93 @@
 
   <section class="post-content">
   
-	<p>This is a photo gallery made from the static files in the <code class="language-plaintext highlighter-rouge">assets/img/pexels</code> folder.
-I wanted to create automatically a simple gallery from a folder without having to create a markdown page as you would for the portfolio.</p>
+	<p>Como resultado del proyecto se generaron un gran número de gráficos para cada uno de las variables utilizadas ( <a href="/2021/11/07/diccionario.html">ver Diccionario de datos</a>).</p>
 
-<style>
-/* force scrollbar */
-html { overflow-y: scroll; }
+<p>Cada gráfica tiene un nombre compuesto por la siguiente estructura:</p>
+
+<p><strong>var_{id}_{tipo de gráfico}.png</strong></p>
+<ul>
+  <li><em>id</em> = Se refiere al id de la variable tomada del <a href="/2021/11/07/diccionario.html">Diccionario de datos</a></li>
+  <li>
+    <p><em>tipo de gráfico</em> = Aquí depende del tipo de gráfico creados, el tipo de gráficos son los siguientes:</p>
+
+    <ul>
+      <li><strong>trend</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="row">
     
-/* To overwrite page's padding, to get bigger images */
-/* article {padding:2%;} */
-</style>
-
-<div id="masonry" class="grid">
-<div class="grid-sizer"></div>
-<div class="gutter-sizer"></div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+    <div class="column">
+        <img class="single" src="/assets/img/pexels/var_19_trend.png" alt="var_19_trend.png" />
+    </div>
     
-        <img src="/assets/img/pexels/book-glass.jpeg" alt="" class="grid-item" style="padding: 0;" />
-      
-  
-
-  
-    
-        <img src="/assets/img/pexels/computer.jpeg" alt="" class="grid-item" style="padding: 0;" />
-      
-  
-
-  
-    
-        <img src="/assets/img/pexels/search-map.jpeg" alt="" class="grid-item" style="padding: 0;" />
-      
-  
-
-  
-    
-        <img src="/assets/img/pexels/travel.jpeg" alt="" class="grid-item" style="padding: 0;" />
-      
-  
-
-  
-    
-        <img src="/assets/img/pexels/triangular.jpeg" alt="" class="grid-item" style="padding: 0;" />
-      
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 </div>
 
-<script src="/assets/js/vendor/imagesloaded.min.js" type="text/javascript"></script>
+<ul>
+  <li><strong>scatter</strong></li>
+</ul>
 
-<script src="/assets/js/vendor/masonry.pkgd.min.js" type="text/javascript"></script>
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/pexels/var_322_scatter.png" alt="var_322_scatter.png" />
+    </div>
+    
+</div>
 
+<ul>
+  <li><strong>scatter_time</strong></li>
+</ul>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/pexels/var_80_scatter_time.png" alt="var_80_scatter_time.png" />
+    </div>
+    
+</div>
+
+<ul>
+  <li><strong>static</strong></li>
+</ul>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/pexels/var_79_static.png" alt="var_79_static.png" />
+    </div>
+    
+</div>
+
+<ul>
+  <li><strong>map</strong></li>
+</ul>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/pexels/var_149_map.png" alt="var_149_map.png" />
+    </div>
+    
+</div>
+
+<ul>
+  <li><strong>map_change</strong></li>
+</ul>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/pexels/var_149_map_change.png" alt="var_149_map_change.png" />
+    </div>
+    
+</div>
+
+<p>En algunas ocasiones puede existir gráficos en blanco, cuando el tipo de información no permite bajarlo.</p>
+
+<p><a href="https://github.com/pulsosocialcolombia/pulsosocial-bancoimg/archive/refs/heads/main.zip">Bajar el Banco de Imágenes</a></p>
 
   
   </section>
@@ -582,12 +308,16 @@ html { overflow-y: scroll; }
   <div class="tag-list">
     <ul>
       
-        <li class="meta">Tag</li>
+        <li class="meta">Tags</li>
       
 
       
-        <li><a class="button" href="/tags#Page">
-          <p><i class="fas fa-tag fa-fw fa-sm"></i> Page</p>
+        <li><a class="button" href="/tags#images">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> images</p>
+        </a></li>
+      
+        <li><a class="button" href="/tags#resultados">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> resultados</p>
         </a></li>
       
     </ul>

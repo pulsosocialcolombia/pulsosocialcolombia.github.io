@@ -1,0 +1,17 @@
+---
+layout: post
+title: Diccionario de Datos
+---
+
+En total, el proyecto Pulso Colombia se incluyeron más de 300 indicadores. Para facilitar el acceso se creó un diccionario de datos que facilita su análisis y uso.
+
+					
+
+
+
+El diccionario está disponible en esta dirección
+
+<a href="https://docs.google.com/spreadsheets/d/1ZEqO-bYWPYixr2xI6fNeW4MCEeyZYqFoIRUKllhbeU8/edit?usp=sharing" target="_blank">Diccionario de Datos</a>
+
+
+{% include aligner.html images="backs/1.png" %}

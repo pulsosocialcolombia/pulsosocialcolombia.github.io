@@ -1,6 +1,8 @@
-- name: Tutorials
+- name: Indicadores
   link: /
-- name: Videos
-  link: /videos/
-- name: FAQ
-  link: /faq/
+- name: Libreria R
+  link: /library/
+- name: Bases de Datos
+  link: /basesdedatos/
+- name: Autores
+  link: /autores/

@@ -1,24 +1,24 @@
 # ----
 # Site
 
-title: Base
-url: "https://orange-ape.cloudvent.net/"
-baseurl:
+title: Pulso Social Colombia
+url: "https://pulsosocialcolombia.github.io/"
+baseurl: ""
 google_analytics_key:
 disqus_shortname:
 newsletter_action:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Knowledge base template for Jekyll.
+description: Documentación de la implementación de la metodología de Pulso Social Colombia - Universidad EAFIT - BID
 author:
-  name:
+  name: Valor Público - Universidad EAFIT
   email:
-  twitter: # twitter username without the @ symbol
+  twitter: CValorPublico
 social:
-  name: Base Template
+  name: Pulso Social Colombia
   links:
-    - https://github.com/CloudCannon/base-jekyll-template
+    - https://github.com/pulsosocialcolombia
 
 # -----
 # Build

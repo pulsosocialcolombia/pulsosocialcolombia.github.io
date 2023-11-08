@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+Con el fin de facilitar el acceso a los datos que dan origen al proyecto Pulso Social Colombia, se ha creado una función de R que permite acceder a todos los datos utilizados para el análisis.
+
+
+```R
+library(pulsosocialcolombia)
+```
+
+La base de datos madre es:
+
+```R
+pulso_ds()
+```
+
+Las funciones disponible después de cargar la función son las siguientes:
+
+* **pulso_trend(id,tipo)** genera un gráfico de tendencias con la información temporal disponible
+- *id* = se refiere al id de la variable
+- *tipo* = El tipo de gráfico que se quiere crear: (1) Con etiquetas; o sin etiquetas
+
+* **pulso_static(id,tipo,año)** genera un gráfico de barras circular para un año específico.
+- *id* = se refiere al id de la variable
+- *tipo* = El tipo de gráfico que se quiere crear: (1) Con etiquetas; o sin etiquetas
+-  *año* = El año para el cual se quiere hacer el análisis. Si no se provee se crea el último año disponible.
+
+* **pulso_map(id, tipo, col_palette)** genera un mapa con la información disponible a nivel departamental para el primer y último año disponible por variable.
+  - *id* = se refiere al id de la variable
+  - *tipo* = El tipo de gráfico que se quiere crear: (1) Con etiquetas; o sin etiquetas
+  - *col_palette* = Es la paleta de colores
+
+* **pulso_map_change(id, tipo, col_palette)** genera un mapa con la diferencia porcentual del año base y el año final disponible por variable.
+  - *id* = se refiere al id de la variable
+  - *tipo* = El tipo de gráfico que se quiere crear: (1) Con etiquetas; o sin etiquetas
+  - *col_palette* = Es la paleta de colores
+
+* **pulso_scatter(id, tipo, año, col_palette)** genera un gráfico tipo scatter plot con la variable por categorías.
+    - *id* = se refiere al id de la variable
+    - *tipo* = El tipo de gráfico que se quiere crear: (1) Con etiquetas; o sin etiquetas
+    - *col_palette* = Es la paleta de colores
+    -  *año* = El año para el cual se quiere hacer el análisis. Si no se provee se crea el último año disponible.
+
+Para más información puede visitar el repositorio de datos

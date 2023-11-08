@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-08T20:41:56+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Pulso Social Colombia</title><subtitle>Documentación de la implementación de la metodología de Pulso Social Colombia - Universidad EAFIT - BID</subtitle><author><name>Valor Público - Universidad EAFIT</name></author><entry><title type="html">Fuente de agua - acueducto comunal( zona )</title><link href="http://localhost:4000/indicator/contexto/var-134/" rel="alternate" type="text/html" title="Fuente de agua - acueducto comunal( zona )" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/indicator/contexto/var-134</id><content type="html" xml:base="http://localhost:4000/indicator/contexto/var-134/"><![CDATA[<p>Viviendas segun el tipo de fuente del agua - acueducto comunal.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-08T22:56:28+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Pulso Social Colombia</title><subtitle>Documentación de la implementación de la metodología de Pulso Social Colombia - Universidad EAFIT - BID</subtitle><author><name>Valor Público - Universidad EAFIT</name></author><entry><title type="html">Asistencia escolar de menores de 5 años (%) (dpto)</title><link href="http://localhost:4000/resultados/var-99/" rel="alternate" type="text/html" title="Asistencia escolar de menores de 5 años (%) (dpto)" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/resultados/var-99</id><content type="html" xml:base="http://localhost:4000/resultados/var-99/"><![CDATA[<p>Porcentaje de personas menores de 5 años que asisten al colegio.
 Fuente: DANE basado en la Encuesta Nacional de Calidad de Vida</p>
 
 <h2 id="unidad-de-medida">Unidad de medida</h2>
 <p>(%)</p>
 
 <h2 id="niveles-de-desagregación">Niveles de desagregación</h2>
-<p>Territorial:Regiones, departamentos, cabeceras municipales y rurales</p>
+<p>Territorial:Departamentos, cabeceras municipales y rurales, nacional</p>
 
 <h2 id="disponibilidad-temporal">Disponibilidad temporal</h2>
 <p>Esta variable está disponible para el periodo 2010 - 2020</p>
@@ -15,12 +15,28 @@ Fuente: DANE basado en la Encuesta Nacional de Calidad de Vida</p>
 
 <h2 id="gráficos-disponibles">Gráficos Disponibles</h2>
 
+<p>A través de la función pulso social en R <a href="https://github.com/pulsosocialcolombia/PulsoSocialColombia">PulsoSocialColombia</a></p>
+
 <h3 id="estático">Estático</h3>
 
-<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pulso_static</span><span class="p">(</span><span class="m">134</span><span class="p">)</span><span class="w">
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pulso_static</span><span class="p">(</span><span class="m">99</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="/images/inds/var_134_trend.png" alt="Example image" /></p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Indicator" /><category term="Contexto" /><summary type="html"><![CDATA[Fuente de agua - acueducto comunal]]></summary></entry><entry><title type="html">Autores</title><link href="http://localhost:4000/autores/" rel="alternate" type="text/html" title="Autores" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/autores</id><content type="html" xml:base="http://localhost:4000/autores/"><![CDATA[<p>Esta proyecto es liderado por el Centro Valor Público y la Banco Interamericano de Desarrollo BID.</p>
+<p><img src="/images/inds/var_99_static.png" alt="Example image" /></p>
+
+<h3 id="temporal">Temporal</h3>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pulso_trend</span><span class="p">(</span><span class="m">99</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/images/inds/var_99_trend.png" alt="Example image" /></p>
+
+<h3 id="mapa">Mapa</h3>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pulso_map</span><span class="p">(</span><span class="m">99</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/images/inds/var_99_map.png" alt="Example image" /></p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Resultados" /><summary type="html"><![CDATA[Asistencia escolar de menores de 5 años (%)]]></summary></entry><entry><title type="html">Autores</title><link href="http://localhost:4000/autores/" rel="alternate" type="text/html" title="Autores" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/autores</id><content type="html" xml:base="http://localhost:4000/autores/"><![CDATA[<p>Esta proyecto es liderado por el Centro Valor Público y la Banco Interamericano de Desarrollo BID.</p>
 
 <p>Los autores princiles son:</p>
 <ul>
@@ -105,158 +121,109 @@ Fuente: DANE basado en la Encuesta Nacional de Calidad de Vida</p>
 
 <h2 id="reportes">Reportes</h2>
 
-<p>Para cualquier duda o problema con el paquete no dude en contactar a <a href="maito:jmunozm1@eafit.edu.co">Juan Carlos Muñoz-Mora</a> - Valor Público - Universidad EAFIT</p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><summary type="html"><![CDATA[Con el fin de facilitar el acceso a los datos que dan origen al proyecto Pulso Social Colombia, se ha creado una función de R que permite acceder a todos los datos utilizados para el análisis.]]></summary></entry><entry><title type="html">Percentil 25 del ingreso laboral (Millones de pesos)( ciudad_etnia )</title><link href="http://localhost:4000/indicator/contexto/var-1/" rel="alternate" type="text/html" title="Percentil 25 del ingreso laboral (Millones de pesos)( ciudad_etnia )" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/indicator/contexto/var-1</id><content type="html" xml:base="http://localhost:4000/indicator/contexto/var-1/"><![CDATA[<p>Percentil 25 del ingreso de las personas ocupadas. La observación del 2020 corresponde al último trimestre del año. Para Minorias se toma todas las personas que hacen parte de un grupo étnico minoritario versus el resto de la población.
-Fuente: DANE basado en la Gran Encuesta Integrada de Hogares.</p>
+<p>Para cualquier duda o problema con el paquete no dude en contactar a <a href="maito:jmunozm1@eafit.edu.co">Juan Carlos Muñoz-Mora</a> - Valor Público - Universidad EAFIT</p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><summary type="html"><![CDATA[Con el fin de facilitar el acceso a los datos que dan origen al proyecto Pulso Social Colombia, se ha creado una función de R que permite acceder a todos los datos utilizados para el análisis.]]></summary></entry><entry><title type="html">Gran Encuesta Integrada de Hogares (GEIH)</title><link href="http://localhost:4000/bases/base-1/" rel="alternate" type="text/html" title="Gran Encuesta Integrada de Hogares (GEIH)" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/bases/base-1</id><content type="html" xml:base="http://localhost:4000/bases/base-1/"><![CDATA[<p>La Gran encuesta integrada de hogares es una encuesta mediante la cual se solicita información sobre las condiciones de empleo de las personas (si trabajan, en qué trabajan, cuánto ganan, si tienen seguridad social en salud, si están buscando empleo, razones de inactividad e informalidad), además de las características generales de la población como sexo, edad, se pregunta sobre sus fuentes de ingresos.</p>
 
-<h2 id="unidad-de-medida">Unidad de medida</h2>
-<p>Pesos</p>
+<h2 id="fecha-última-actualización">Fecha última actualización</h2>
+<p>1629504000</p>
 
-<h2 id="niveles-de-desagregación">Niveles de desagregación</h2>
-<p>Territorial:Nacional, Ciudades</p>
+<h2 id="fuente">Fuente:</h2>
+<p><a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/mercado-laboral-por-departamentos/mercado-laboral-por-departamento-historicos">DANE</a></p>
 
-<h2 id="disponibilidad-temporal">Disponibilidad temporal</h2>
-<p>Esta variable está disponible para el periodo 2010 - 2020</p>
+<h2 id="nivel-poblacional">Nivel Poblacional</h2>
+<p>cod_dpto</p>
 
-<h2 id="fuente">Fuente</h2>
-<p>Gran Encuesta Integrada de Hogares (GEIH)</p>
+<h2 id="nivel-territorial">Nivel Territorial</h2>
+<p>Departamental, urbano y rural, ciudades principales y áreas metropolitanas</p>
 
-<h2 id="gráficos-disponibles">Gráficos Disponibles</h2>
+<h2 id="nivel-temporal">Nivel Temporal</h2>
+<p>Anual, mensual y trimestre móvil</p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Bases" /><summary type="html"><![CDATA[La Gran encuesta integrada de hogares es una encuesta mediante la cual se solicita información sobre las condiciones de empleo de las personas si trabajan en qué trabajan cuánto ganan si tienen seguridad social en salud si están buscando empleo razones de inactividad e informalidad además de las características generales de la población como sexo edad se pregunta sobre sus fuentes de ingresos]]></summary></entry><entry><title type="html">Covid - 19</title><link href="http://localhost:4000/bases/base-10/" rel="alternate" type="text/html" title="Covid - 19" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/bases/base-10</id><content type="html" xml:base="http://localhost:4000/bases/base-10/"><![CDATA[<p>Información de contagios, recuperados, fallecidos, activos.</p>
 
-<h3 id="estático">Estático</h3>
+<h2 id="fecha-última-actualización">Fecha última actualización</h2>
+<p>1632268800</p>
 
-<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pulso_static</span><span class="p">(</span><span class="m">1</span><span class="p">)</span><span class="w">
-</span></code></pre></div></div>
+<h2 id="fuente">Fuente:</h2>
+<p><a href="https://www.ins.gov.co/Noticias/Paginas/coronavirus.aspx">Instituto Nacional de Salud</a></p>
 
-<p><img src="/images/inds/var_1_trend.png" alt="Example image" /></p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Indicator" /><category term="Contexto" /><summary type="html"><![CDATA[Percentil 25 del ingreso laboral (Millones de pesos)]]></summary></entry><entry><title type="html">Percentil 25 del ingreso laboral de los adultos (Millones de pesos)( nacional )</title><link href="http://localhost:4000/indicator/resultados/var-10/" rel="alternate" type="text/html" title="Percentil 25 del ingreso laboral de los adultos (Millones de pesos)( nacional )" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/indicator/resultados/var-10</id><content type="html" xml:base="http://localhost:4000/indicator/resultados/var-10/"><![CDATA[<p>Percentil 25 del ingreso de los adultos ocupados (29-64 años). La observación del 2020 corresponde al último trimestre del año. Para Minorias se toma todas las personas que hacen parte de un grupo étnico minoritario versus el resto de la población.
-Fuente: DANE basado en la Gran Encuesta Integrada de Hogares.</p>
+<h2 id="nivel-poblacional">Nivel Poblacional</h2>
+<p>NA</p>
 
-<h2 id="unidad-de-medida">Unidad de medida</h2>
-<p>Pesos</p>
+<h2 id="nivel-territorial">Nivel Territorial</h2>
+<p>Nacional, departamental y municipal</p>
 
-<h2 id="niveles-de-desagregación">Niveles de desagregación</h2>
-<p>Territorial:Nacional, Ciudades</p>
+<h2 id="nivel-temporal">Nivel Temporal</h2>
+<p>Diario</p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Bases" /><summary type="html"><![CDATA[Información de contagios recuperados fallecidos activos]]></summary></entry><entry><title type="html">Anuario Estadístico de Movimientos Internacionales</title><link href="http://localhost:4000/bases/base-11/" rel="alternate" type="text/html" title="Anuario Estadístico de Movimientos Internacionales" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/bases/base-11</id><content type="html" xml:base="http://localhost:4000/bases/base-11/"><![CDATA[<p>Infromación de las entradas y salidas de viajeros internacionales, lugares de procedencia o destino, razones del viajes y zonas de control migratorio</p>
 
-<h2 id="disponibilidad-temporal">Disponibilidad temporal</h2>
-<p>Esta variable está disponible para el periodo 2010 - 2020</p>
+<h2 id="fecha-última-actualización">Fecha última actualización</h2>
+<p>1631145600</p>
 
-<h2 id="fuente">Fuente</h2>
-<p>Gran Encuesta Integrada de Hogares (GEIH)</p>
+<h2 id="fuente">Fuente:</h2>
+<p><a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/movilidad-y-migracion/anuarios-estadisticos-de-movimientos-internacionales">DANE</a></p>
 
-<h2 id="gráficos-disponibles">Gráficos Disponibles</h2>
+<h2 id="nivel-poblacional">Nivel Poblacional</h2>
+<p>NA</p>
 
-<h3 id="estático">Estático</h3>
+<h2 id="nivel-territorial">Nivel Territorial</h2>
+<p>Nacional</p>
 
-<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pulso_static</span><span class="p">(</span><span class="m">10</span><span class="p">)</span><span class="w">
-</span></code></pre></div></div>
+<h2 id="nivel-temporal">Nivel Temporal</h2>
+<p>Anual, mensual</p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Bases" /><summary type="html"><![CDATA[Infromación de las entradas y salidas de viajeros internacionales lugares de procedencia o destino razones del viajes y zonas de control migratorio]]></summary></entry><entry><title type="html">Encuesta Longitudinal Colombiana (ELCA)</title><link href="http://localhost:4000/bases/base-12/" rel="alternate" type="text/html" title="Encuesta Longitudinal Colombiana (ELCA)" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/bases/base-12</id><content type="html" xml:base="http://localhost:4000/bases/base-12/"><![CDATA[<p>NA</p>
 
-<p><img src="/images/inds/var_10_trend.png" alt="Example image" /></p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Indicator" /><category term="Resultados" /><summary type="html"><![CDATA[Percentil 25 del ingreso laboral de los adultos (Millones de pesos)]]></summary></entry><entry><title type="html">Asistencia escolar de menores de 5 años (%)( zona )</title><link href="http://localhost:4000/indicator/resultados/var-100/" rel="alternate" type="text/html" title="Asistencia escolar de menores de 5 años (%)( zona )" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/indicator/resultados/var-100</id><content type="html" xml:base="http://localhost:4000/indicator/resultados/var-100/"><![CDATA[<p>Porcentaje de personas menores de 5 años que asisten al colegio.
-Fuente: DANE basado en la Encuesta Nacional de Calidad de Vida</p>
+<h2 id="fecha-última-actualización">Fecha última actualización</h2>
+<p>1632096000</p>
 
-<h2 id="unidad-de-medida">Unidad de medida</h2>
-<p>(%)</p>
+<h2 id="fuente">Fuente:</h2>
+<p><a href="NA">Universidad de los Andes</a></p>
 
-<h2 id="niveles-de-desagregación">Niveles de desagregación</h2>
-<p>Territorial:Departamentos, cabeceras municipales y rurales, nacional</p>
+<h2 id="nivel-poblacional">Nivel Poblacional</h2>
+<p>NA</p>
 
-<h2 id="disponibilidad-temporal">Disponibilidad temporal</h2>
-<p>Esta variable está disponible para el periodo 2010 - 2020</p>
+<h2 id="nivel-territorial">Nivel Territorial</h2>
+<p>Nacional</p>
 
-<h2 id="fuente">Fuente</h2>
-<p>Encuesta Nacional de Calidad de Vida (ECV)</p>
+<h2 id="nivel-temporal">Nivel Temporal</h2>
+<p>NA</p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Bases" /><summary type="html"><![CDATA[NA]]></summary></entry><entry><title type="html">Pobreza monetaria y pobreza monetaria extrema</title><link href="http://localhost:4000/bases/base-13/" rel="alternate" type="text/html" title="Pobreza monetaria y pobreza monetaria extrema" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/bases/base-13</id><content type="html" xml:base="http://localhost:4000/bases/base-13/"><![CDATA[<p>Información de incidencia de pobreza y pobreza extrema, coeficiente de GINI, promedio de ingreso per cápita, lineas de pobreza y pobreza extrema, brecha y severidad de pobreza monetaria, población por clases sociales</p>
 
-<h2 id="gráficos-disponibles">Gráficos Disponibles</h2>
+<h2 id="fecha-última-actualización">Fecha última actualización</h2>
+<p>1632096000</p>
 
-<h3 id="estático">Estático</h3>
+<h2 id="fuente">Fuente:</h2>
+<p><a href="Pobreza monetaria (dane.gov.co)">DANE</a></p>
 
-<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pulso_static</span><span class="p">(</span><span class="m">100</span><span class="p">)</span><span class="w">
-</span></code></pre></div></div>
+<h2 id="nivel-poblacional">Nivel Poblacional</h2>
+<p>NA</p>
 
-<p><img src="/images/inds/var_100_trend.png" alt="Example image" /></p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Indicator" /><category term="Resultados" /><summary type="html"><![CDATA[Asistencia escolar de menores de 5 años (%)]]></summary></entry><entry><title type="html">Asistencia escolar de menores de 5 años por quintil de ingreso (%) - quintil 1( dpto )</title><link href="http://localhost:4000/indicator/resultados/var-101/" rel="alternate" type="text/html" title="Asistencia escolar de menores de 5 años por quintil de ingreso (%) - quintil 1( dpto )" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/indicator/resultados/var-101</id><content type="html" xml:base="http://localhost:4000/indicator/resultados/var-101/"><![CDATA[<p>Porcentaje de personas menores de 5 años que asisten al colegio por quintil de ingreso.
-Fuente: DANE basado en la Encuesta Nacional de Calidad de Vida</p>
+<h2 id="nivel-territorial">Nivel Territorial</h2>
+<p>Nacional, departamental</p>
 
-<h2 id="unidad-de-medida">Unidad de medida</h2>
-<p>(%)</p>
+<h2 id="nivel-temporal">Nivel Temporal</h2>
+<p>Anual</p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Bases" /><summary type="html"><![CDATA[Información de incidencia de pobreza y pobreza extrema coeficiente de GINI promedio de ingreso per cápita lineas de pobreza y pobreza extrema brecha y severidad de pobreza monetaria población por clases sociales]]></summary></entry><entry><title type="html">Índice de GINI</title><link href="http://localhost:4000/bases/base-14/" rel="alternate" type="text/html" title="Índice de GINI" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/bases/base-14</id><content type="html" xml:base="http://localhost:4000/bases/base-14/"><![CDATA[<p>Información del coeficiente de GINI para todos los paises</p>
 
-<h2 id="niveles-de-desagregación">Niveles de desagregación</h2>
-<p>Territorial:Departamentos, cabeceras municipales y rurales, nacional</p>
+<h2 id="fecha-última-actualización">Fecha última actualización</h2>
+<p>1632096000</p>
 
-<h2 id="disponibilidad-temporal">Disponibilidad temporal</h2>
-<p>Esta variable está disponible para el periodo 2010 - 2020</p>
+<h2 id="fuente">Fuente:</h2>
+<p><a href="https://datos.bancomundial.org/indicador/SI.POV.GINI">Banco Mundial</a></p>
 
-<h2 id="fuente">Fuente</h2>
-<p>Encuesta Nacional de Calidad de Vida (ECV)</p>
+<h2 id="nivel-poblacional">Nivel Poblacional</h2>
+<p>NA</p>
 
-<h2 id="gráficos-disponibles">Gráficos Disponibles</h2>
+<h2 id="nivel-territorial">Nivel Territorial</h2>
+<p>NA</p>
 
-<h3 id="estático">Estático</h3>
+<h2 id="nivel-temporal">Nivel Temporal</h2>
+<p>Anual</p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Bases" /><summary type="html"><![CDATA[Información del coeficiente de GINI para todos los paises]]></summary></entry><entry><title type="html">Índice de Pobreza Multidimensional</title><link href="http://localhost:4000/bases/base-15/" rel="alternate" type="text/html" title="Índice de Pobreza Multidimensional" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/bases/base-15</id><content type="html" xml:base="http://localhost:4000/bases/base-15/"><![CDATA[<p>Información sobre la pobreza multidimensional, incidencia de pobreza y privaciones del hogar.</p>
 
-<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pulso_static</span><span class="p">(</span><span class="m">101</span><span class="p">)</span><span class="w">
-</span></code></pre></div></div>
+<h2 id="fecha-última-actualización">Fecha última actualización</h2>
+<p>1632096000</p>
 
-<p><img src="/images/inds/var_101_trend.png" alt="Example image" /></p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Indicator" /><category term="Resultados" /><summary type="html"><![CDATA[Asistencia escolar de menores de 5 años por quintil de ingreso (%) - quintil 1]]></summary></entry><entry><title type="html">Asistencia escolar de menores de 5 años por quintil de ingreso (%) - quintil 1( zona )</title><link href="http://localhost:4000/indicator/resultados/var-102/" rel="alternate" type="text/html" title="Asistencia escolar de menores de 5 años por quintil de ingreso (%) - quintil 1( zona )" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/indicator/resultados/var-102</id><content type="html" xml:base="http://localhost:4000/indicator/resultados/var-102/"><![CDATA[<p>Porcentaje de personas menores de 5 años que asisten al colegio por quintil de ingreso.
-Fuente: DANE basado en la Encuesta Nacional de Calidad de Vida</p>
+<h2 id="fuente">Fuente:</h2>
+<p><a href="Pobreza multidimensional (dane.gov.co)">DANE</a></p>
 
-<h2 id="unidad-de-medida">Unidad de medida</h2>
-<p>(%)</p>
+<h2 id="nivel-poblacional">Nivel Poblacional</h2>
+<p>NA</p>
 
-<h2 id="niveles-de-desagregación">Niveles de desagregación</h2>
-<p>Territorial:Departamentos, cabeceras municipales y rurales, nacional</p>
+<h2 id="nivel-territorial">Nivel Territorial</h2>
+<p>Nacional, departamental, municipal, urbano y rural</p>
 
-<h2 id="disponibilidad-temporal">Disponibilidad temporal</h2>
-<p>Esta variable está disponible para el periodo 2010 - 2020</p>
-
-<h2 id="fuente">Fuente</h2>
-<p>Encuesta Nacional de Calidad de Vida (ECV)</p>
-
-<h2 id="gráficos-disponibles">Gráficos Disponibles</h2>
-
-<h3 id="estático">Estático</h3>
-
-<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pulso_static</span><span class="p">(</span><span class="m">102</span><span class="p">)</span><span class="w">
-</span></code></pre></div></div>
-
-<p><img src="/images/inds/var_102_trend.png" alt="Example image" /></p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Indicator" /><category term="Resultados" /><summary type="html"><![CDATA[Asistencia escolar de menores de 5 años por quintil de ingreso (%) - quintil 1]]></summary></entry><entry><title type="html">Asistencia escolar de menores de 5 años por quintil de ingreso (%) - quintil 2( dpto )</title><link href="http://localhost:4000/indicator/resultados/var-103/" rel="alternate" type="text/html" title="Asistencia escolar de menores de 5 años por quintil de ingreso (%) - quintil 2( dpto )" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/indicator/resultados/var-103</id><content type="html" xml:base="http://localhost:4000/indicator/resultados/var-103/"><![CDATA[<p>Porcentaje de personas menores de 5 años que asisten al colegio por quintil de ingreso.
-Fuente: DANE basado en la Encuesta Nacional de Calidad de Vida</p>
-
-<h2 id="unidad-de-medida">Unidad de medida</h2>
-<p>(%)</p>
-
-<h2 id="niveles-de-desagregación">Niveles de desagregación</h2>
-<p>Territorial:Departamentos, cabeceras municipales y rurales, nacional</p>
-
-<h2 id="disponibilidad-temporal">Disponibilidad temporal</h2>
-<p>Esta variable está disponible para el periodo 2010 - 2020</p>
-
-<h2 id="fuente">Fuente</h2>
-<p>Encuesta Nacional de Calidad de Vida (ECV)</p>
-
-<h2 id="gráficos-disponibles">Gráficos Disponibles</h2>
-
-<h3 id="estático">Estático</h3>
-
-<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pulso_static</span><span class="p">(</span><span class="m">103</span><span class="p">)</span><span class="w">
-</span></code></pre></div></div>
-
-<p><img src="/images/inds/var_103_trend.png" alt="Example image" /></p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Indicator" /><category term="Resultados" /><summary type="html"><![CDATA[Asistencia escolar de menores de 5 años por quintil de ingreso (%) - quintil 2]]></summary></entry><entry><title type="html">Asistencia escolar de menores de 5 años por quintil de ingreso (%) - quintil 2( zona )</title><link href="http://localhost:4000/indicator/resultados/var-104/" rel="alternate" type="text/html" title="Asistencia escolar de menores de 5 años por quintil de ingreso (%) - quintil 2( zona )" /><published>2023-11-01T00:00:00+00:00</published><updated>2023-11-01T00:00:00+00:00</updated><id>http://localhost:4000/indicator/resultados/var-104</id><content type="html" xml:base="http://localhost:4000/indicator/resultados/var-104/"><![CDATA[<p>Porcentaje de personas menores de 5 años que asisten al colegio por quintil de ingreso.
-Fuente: DANE basado en la Encuesta Nacional de Calidad de Vida</p>
-
-<h2 id="unidad-de-medida">Unidad de medida</h2>
-<p>(%)</p>
-
-<h2 id="niveles-de-desagregación">Niveles de desagregación</h2>
-<p>Territorial:Departamentos, cabeceras municipales y rurales, nacional</p>
-
-<h2 id="disponibilidad-temporal">Disponibilidad temporal</h2>
-<p>Esta variable está disponible para el periodo 2010 - 2020</p>
-
-<h2 id="fuente">Fuente</h2>
-<p>Encuesta Nacional de Calidad de Vida (ECV)</p>
-
-<h2 id="gráficos-disponibles">Gráficos Disponibles</h2>
-
-<h3 id="estático">Estático</h3>
-
-<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pulso_static</span><span class="p">(</span><span class="m">104</span><span class="p">)</span><span class="w">
-</span></code></pre></div></div>
-
-<p><img src="/images/inds/var_104_trend.png" alt="Example image" /></p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Indicator" /><category term="Resultados" /><summary type="html"><![CDATA[Asistencia escolar de menores de 5 años por quintil de ingreso (%) - quintil 2]]></summary></entry></feed>
+<h2 id="nivel-temporal">Nivel Temporal</h2>
+<p>Anual</p>]]></content><author><name>Valor Público - Universidad EAFIT</name></author><category term="Bases" /><summary type="html"><![CDATA[Información sobre la pobreza multidimensional incidencia de pobreza y privaciones del hogar]]></summary></entry></feed>

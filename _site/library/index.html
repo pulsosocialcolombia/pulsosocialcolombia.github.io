@@ -19,8 +19,8 @@
 <meta property="og:title" content="Librería" />
 <meta name="author" content="Valor Público - Universidad EAFIT" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Con el fin de facilitar el acceso a los datos que dan origen al proyecto Pulso Social Colombia, se ha creado una función de R que permite acceder a todos los datos utilizados para el análisis." />
-<meta property="og:description" content="Con el fin de facilitar el acceso a los datos que dan origen al proyecto Pulso Social Colombia, se ha creado una función de R que permite acceder a todos los datos utilizados para el análisis." />
+<meta name="description" content="Con el fin de facilitar el acceso a los datos que dan origen al proyecto Pulso Social Colombia, se ha creado una librería de R que permite acceder a todos los datos y a los gráficos de manera fácil y rápida." />
+<meta property="og:description" content="Con el fin de facilitar el acceso a los datos que dan origen al proyecto Pulso Social Colombia, se ha creado una librería de R que permite acceder a todos los datos y a los gráficos de manera fácil y rápida." />
 <link rel="canonical" href="http://localhost:4000/library/" />
 <meta property="og:url" content="http://localhost:4000/library/" />
 <meta property="og:site_name" content="Pulso Social Colombia" />
@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Librería" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Valor Público - Universidad EAFIT"},"dateModified":"2023-11-01T00:00:00+00:00","datePublished":"2023-11-01T00:00:00+00:00","description":"Con el fin de facilitar el acceso a los datos que dan origen al proyecto Pulso Social Colombia, se ha creado una función de R que permite acceder a todos los datos utilizados para el análisis.","headline":"Librería","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/library/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/siteicon.png"},"name":"Valor Público - Universidad EAFIT"},"url":"http://localhost:4000/library/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Valor Público - Universidad EAFIT"},"dateModified":"2023-11-01T00:00:00+00:00","datePublished":"2023-11-01T00:00:00+00:00","description":"Con el fin de facilitar el acceso a los datos que dan origen al proyecto Pulso Social Colombia, se ha creado una librería de R que permite acceder a todos los datos y a los gráficos de manera fácil y rápida.","headline":"Librería","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/library/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/siteicon.png"},"name":"Valor Público - Universidad EAFIT"},"url":"http://localhost:4000/library/"}</script>
 <!-- End Jekyll SEO tag -->
 
 		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Pulso Social Colombia" />
@@ -49,12 +49,17 @@
 	
 
 		
-		<a href="/acerca/" class="">Metodologia</a>
+		<a href="/acerca/" class="">Metodología</a>
 	
 	
 
 		
-		<a href="/" class="">Indicadores</a>
+		<a href="/dashboard/" class="">Dashboard</a>
+	
+	
+
+		
+		<a href="/colombias/" class="">Análisis Brechas</a>
 	
 	
 
@@ -78,7 +83,7 @@
 					<h1>Pulso Social Colombia</h1>
 					<p>Entendiendo la realidad de las brechas territoriales en Colombia</p>
 					<form action="/search/" method="get">
-	<input type="search" name="q"  placeholder="What would you like to know?" autofocus>
+	<input type="search" name="q"  placeholder="¿Qué variable quieres buscar?" autofocus>
 	<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -112,18 +117,18 @@
 		
 		
 		<div class="tutorial-main">
-			<p>Con el fin de facilitar el acceso a los datos que dan origen al proyecto Pulso Social Colombia, se ha creado una función de R que permite acceder a todos los datos utilizados para el análisis.</p>
+			<p>Con el fin de facilitar el acceso a los datos que dan origen al proyecto Pulso Social Colombia, se ha creado una librería de R que permite acceder a todos los datos y a los gráficos de manera fácil y rápida.</p>
 
 <h2 id="instrucciones-de-instalación">Instrucciones de Instalación</h2>
 
-<p>Instale la versión de desarrollo del paquete directamente desde GitHub con:</p>
+<p>Instale la versión del paquete directamente desde GitHub con:</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Install devtools</span><span class="w">
 </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">require</span><span class="p">(</span><span class="s2">"devtools"</span><span class="p">))</span><span class="w"> </span><span class="n">install.packages</span><span class="p">(</span><span class="s2">"devtools"</span><span class="p">)</span><span class="w">
-</span><span class="n">devtools</span><span class="o">::</span><span class="n">install_github</span><span class="p">(</span><span class="s2">"pulsosocialcolombia/PulsoSocialColombia"</span><span class="p">)</span><span class="w">
+</span><span class="n">devtools</span><span class="o">::</span><span class="n">install_github</span><span class="p">(</span><span class="s2">"pulsosocialcolombia/PulsoSocialColombia"</span><span class="p">,</span><span class="n">force</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p>El paquete depende de los siguientes paquetes de R:</p>
+<p>El paquete depende de los siguientes paquetes de R, los cuales deben ser instalados para el correcto funcionamiento del paquete inicial:</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">tidyverse</code></li>
@@ -134,15 +139,21 @@
 
 <h2 id="contenido">Contenido</h2>
 
-<p>Las funciones disponible después de cargar la función son las siguientes:</p>
+<p>Una vez instalado, el paquete puede ser cargado de manera directa.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Pulso Social Colombia (BID-EAFIT)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">PulsoSocialColombia</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Las funciones que estarán disponible una vez abierta la función son las siguientes:</p>
 
 <ul>
-  <li><strong>pulso_trend(id,tipo)</strong> genera un gráfico de tendencias con la información temporal disponible</li>
+  <li><strong>pulso_trend(id,tipo)</strong> genera un gráfico de tendencias con la información temporal disponible, los parámetros de la función son los siguientes:</li>
   <li><em>id</em> = se refiere al id de la variable</li>
   <li>
     <p><em>tipo</em> = El tipo de gráfico que se quiere crear: (1) Con etiquetas; o sin etiquetas</p>
   </li>
-  <li><strong>pulso_static(id,tipo,año)</strong> genera un gráfico de barras circular para un año específico.</li>
+  <li><strong>pulso_static(id,tipo,año)</strong> genera un gráfico de barras circular para un año específico., Los parámetros de la función son los siguientes:</li>
   <li><em>id</em> = se refiere al id de la variable</li>
   <li><em>tipo</em> = El tipo de gráfico que se quiere crear: (1) Con etiquetas; o sin etiquetas</li>
   <li>
@@ -172,7 +183,7 @@
   </li>
 </ul>
 
-<p>Adicionalmente, se pone a disposición la base de datos de Pulso Social Colombia:</p>
+<p>Adicionalmente, se pone a disposición la base de datos de Pulso Social Colombia completa:</p>
 
 <ul>
   <li><strong>ds_pulso</strong>: Accede a la infrastructura de datos completa de Pulso Social</li>

@@ -3,12 +3,16 @@ GEM
   specs:
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
+    classifier-reborn (2.3.0)
+      fast-stemmer (~> 1.0)
+      matrix (~> 0.4)
     colorator (1.1.0)
     concurrent-ruby (1.2.2)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
+    fast-stemmer (1.0.2)
     ffi (1.16.3)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
@@ -50,6 +54,7 @@ GEM
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    matrix (0.4.2)
     mercenary (0.3.6)
     mini_portile2 (2.3.0)
     nokogiri (1.8.2)
@@ -74,13 +79,16 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  classifier-reborn
   jekyll (> 3.7.2)
   jekyll-archives (> 2.1.1)
   jekyll-extract-element (= 0.0.7)
   jekyll-feed (> 0.9.3)
+  jekyll-sass-converter (~> 1.5, >= 1.5.2)
   jekyll-seo-tag (> 2.4.0)
   jekyll-sitemap (> 1.2.0)
   kramdown-parser-gfm
+  rouge
   webrick (~> 1.8)
 
 BUNDLED WITH

@@ -4,13 +4,13 @@
 title: Pulso Social Colombia
 url: "https://pulsosocialcolombia.github.io/"
 baseurl: ""
-google_analytics_key:
+google_analytics_key: "G-XJYXXMXMQ2"
 disqus_shortname:
 newsletter_action:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Documentación de la implementación de la metodología de Pulso Social Colombia - Universidad EAFIT - BID
+description: Documentación de la metodología de Pulso Social Colombia - Universidad EAFIT - BID
 author:
   name: Valor Público - Universidad EAFIT
   email:

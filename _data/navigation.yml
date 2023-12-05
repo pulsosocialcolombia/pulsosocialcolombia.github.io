@@ -1,7 +1,9 @@
-- name: Metodologia
+- name: Metodología
   link: /acerca/
-- name: Indicadores
-  link: /
+- name: Dashboard
+  link: /dashboard/
+- name: Análisis Brechas
+  link: /colombias/
 - name: Libreria R
   link: /library/
 - name: Bases de Datos
